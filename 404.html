@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Prata&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cormorant+Infant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Pinyon+Script&family=Prata&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@400;600;700&display=swap" rel="stylesheet">
 	<style id="kirimdigi-font-enhancement">
 		.elementor-element-7012925 .elementor-heading-title {
 			font-family: "Philosopher", sans-serif !important;
@@ -36,6 +36,10 @@
 			font-family: "Cormorant Infant", Georgia, serif !important;
 			font-weight: 700 !important;
 			color: #F1CA85 !important;
+		}
+		.elementor-element-4998cfd6 .jet-listing-dynamic-field__content,
+		.elementor-element-16118ac8 .jet-listing-dynamic-field__content {
+			font-family: "Pinyon Script", sans-serif !important;
 		}
 		.kirimdigi-social-icon {
 			display: inline-flex !important;
@@ -1844,7 +1848,7 @@ document.getElementById("tombolbuka").onclick=function(){
   var song = document.getElementById("song");
   if (song) {
     try {
-      song.currentTime = 32;
+      song.currentTime = 0;
     } catch(e) {}
   }
   _playAudio();
@@ -1882,11 +1886,6 @@ function _playAudio(){
     if(!ytMusicPlaying) {
         var song = document.getElementById("song");
         if(song) {
-            try {
-                if (song.currentTime < 32) {
-                    song.currentTime = 32;
-                }
-            } catch(e) {}
             var p = song.play();
             if (p !== undefined) {
                 p.catch(function(err){});
@@ -1993,11 +1992,11 @@ function _pauseAudio(){
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-4998cfd6 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="4998cfd6" data-element_type="widget" data-e-type="widget" data-widget_type="jet-listing-dynamic-field.default">
 				<div class="elementor-widget-container">
-					<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">T</div></div></div>				</div>
+					<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content" style="font-family: 'Pinyon Script', sans-serif !important;">T</div></div></div>				</div>
 				</div>
 				<div class="elementor-element elementor-element-16118ac8 elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="16118ac8" data-element_type="widget" data-e-type="widget" data-widget_type="jet-listing-dynamic-field.default">
 				<div class="elementor-widget-container">
-					<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">B</div></div></div>				</div>
+					<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content" style="font-family: 'Pinyon Script', sans-serif !important;">B</div></div></div>				</div>
 				</div>
 					</div>
 				</div>
@@ -2515,7 +2514,7 @@ function _pauseAudio(){
 				<div class="elementor-element elementor-element-1b3694b elementor-view-stacked elementor-fixed elementor-shape-circle elementor-widget elementor-widget-wds_audio" data-id="1b3694b" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_position&quot;:&quot;fixed&quot;}" data-widget_type="wds_audio.default">
 				<div class="elementor-widget-container">
 					<script type="text/javascript">
-var WdsAudio = {"source":"url","audio_link":"ratok-pasaman.mp3","audio_start":"32","audio_end":"","autoplay":false}
+var WdsAudio = {"source":"url","audio_link":"urang-minang-baralek-gadang.mp3","audio_start":"0","audio_end":"","autoplay":false}
 </script>
 
 
